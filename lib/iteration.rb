@@ -37,6 +37,7 @@ end
 
 join_ingredients(2)
 
+end 
 
 def find_greater_pair(src)
 new_array = []
@@ -58,4 +59,3 @@ def total_even_pairs(src)
     i += 1
   end
 total
-end
