@@ -4,7 +4,7 @@ def join_ingredients(src)
   # Build a new Array that contains strings where each pair of foods is
   # inserted into this template:
   #
-    # "I love (inner array element 0) and (inner array element 1) on my pizza""
+  # "I love (inner array element 0) and (inner array element 1) on my pizza""
   # As such, there should be a new String for each inner array, or pair
   
   food_array = [
@@ -30,7 +30,13 @@ while row_index < food_statement.count do
     puts food_statement[row_index][0] + " " + food_array[row_index][0] + " "+ food_statement[row_index][1] + " " + food_array[row_index][1] + " "+ food_statement[row_index][2] 
     row_index += 1
 end
-
+ new_array = []
+  i = 0
+  while i < src.length do 
+    new_array.push("I love #{src[i][0]} and #{src[i][1]} on my pizza")
+    i += 1
+  end
+  new_array
 
 end
 
